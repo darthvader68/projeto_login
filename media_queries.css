@@ -1,0 +1,52 @@
+/* typical device breakpoint:
+-----------------------------
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima: telas muito grandes, TVs
+
+*/
+/* tablet */
+@media screen and (min-width: 766px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 90vw; /*90%*/        
+    }
+
+    #login #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #login #formulario {
+        float: left;
+        width: 70%;
+    }
+}
+/* desktop e grandes telas */
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
+    #login {
+        width: 950px;         
+    }
+
+    #login #imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #login #formulario {
+        float: right;
+        width: 50%;
+    }
+}
